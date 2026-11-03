@@ -1,0 +1,70 @@
+:root {
+  --sky: #b5e1f8;
+  --light: #d3eefc;
+  --yellow: #f5c518;
+  --ink: #1a1a1a;
+  --blue: #1c5f93;
+  --red: #e23b3b;
+  --white: #ffffff;
+  --muted: #4b5a66;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--sky);
+  color: var(--ink);
+  font-family: "Nunito", system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  font-size: 17px;
+}
+a { color: var(--blue); }
+h1, h2, h3, .brand { font-family: "Baloo 2", "Nunito", system-ui, sans-serif; line-height: 1.15; }
+.wrap { max-width: 980px; margin: 0 auto; padding: 0 16px; }
+header { padding: 20px 0; }
+header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+header img { height: 44px; width: auto; display: block; }
+nav a { font-weight: 800; text-decoration: none; color: var(--ink); margin-left: 18px; }
+nav a:first-child { margin-left: 0; }
+.hero { text-align: center; padding: 36px 0 28px; }
+.sticker {
+  display: inline-block;
+  background: var(--yellow);
+  border: 4px solid var(--ink);
+  border-radius: 20px;
+  box-shadow: 6px 7px 0 var(--ink);
+  padding: 6px 26px;
+  margin: 0 0 18px;
+  font-size: clamp(2rem, 6vw, 3.2rem);
+}
+.hero p { font-size: 1.2rem; max-width: 640px; margin: 0 auto 24px; }
+.buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.btn {
+  display: inline-block;
+  background: var(--white);
+  color: var(--ink);
+  border: 3px solid var(--ink);
+  border-radius: 999px;
+  box-shadow: 4px 5px 0 var(--ink);
+  padding: 10px 22px;
+  font-weight: 900;
+  text-decoration: none;
+}
+.btn.dark { background: var(--ink); color: var(--yellow); }
+.card {
+  background: var(--white);
+  border: 4px solid var(--ink);
+  border-radius: 26px;
+  box-shadow: 7px 8px 0 var(--ink);
+  padding: 26px 24px;
+  margin: 0 0 32px;
+}
+.card h2 { margin-top: 0; font-size: 1.8rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; }
+.grid img { width: 100%; height: auto; border-radius: 16px; border: 3px solid var(--ink); display: block; }
+.topics { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; list-style: none; margin: 0; }
+.topics li { background: var(--light); border: 2px solid var(--ink); border-radius: 999px; padding: 4px 14px; font-weight: 800; }
+.policy h2 { font-size: 1.35rem; margin-top: 1.6em; }
+.policy h1 { margin-top: 0; font-size: 2.2rem; }
+.date { color: var(--muted); }
+footer { text-align: center; padding: 8px 0 36px; color: var(--muted); }
+footer a { margin: 0 8px; }
